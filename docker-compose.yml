@@ -1,0 +1,27 @@
+version: "3.7"
+services:
+  gitlab:
+    image: gitlab/gitlab-ce:latest
+    restart: always
+    hostname: 'gitlab.example.com'
+    ports:
+     - "80:80"
+     - "5443:443"
+     - "2022:22"
+     - "4567:4567"
+    volumes:
+     - "${GITLAB_HOME:-./GITLAB_HOME}/data:/var/opt/gitlab"
+     - "${GITLAB_HOME:-./GITLAB_HOME}/logs:/var/log/gitlab"
+     - "${GITLAB_HOME:-./GITLAB_HOME}/config:/etc/gitlab"
+  gitlab-runner:
+    # image: gitlab/gitlab-runner:latest
+    image: gitlab/gitlab-runner:alpine
+    restart: always
+    volumes:
+     - "./gitlab-runner/config:/etc/gitlab-runner"
+     - "/var/run/docker.sock:/var/run/docker.sock"
+    # networks:
+    #  mynet:
+    #   ipv4_address: 172.20.0.3
+    depends_on:
+      - gitlab
