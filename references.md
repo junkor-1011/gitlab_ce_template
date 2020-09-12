@@ -22,3 +22,5 @@ Useful References
 - https://docs.gitlab.com/ee/user/packages/container_registry/
 - https://qiita.com/thaim/items/4e7e74e3a1be95fef821
 - https://qiita.com/suesan/items/7fde092df0c5f9cc48d6
+- https://qiita.com/masakura/items/802f4b8ce322d2543c80
+- https://qiita.com/ynott/items/585b7810d71d949e9072
