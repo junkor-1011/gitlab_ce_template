@@ -17,3 +17,8 @@ Useful References
 ## enable HTTPS
 - https://docs.gitlab.com/omnibus/settings/nginx.html#enable-https
 - https://tacchan33.hatenablog.com/entry/2019/09/12/223359
+
+## Registry
+- https://docs.gitlab.com/ee/user/packages/container_registry/
+- https://qiita.com/thaim/items/4e7e74e3a1be95fef821
+- https://qiita.com/suesan/items/7fde092df0c5f9cc48d6

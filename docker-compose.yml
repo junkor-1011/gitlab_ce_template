@@ -10,7 +10,8 @@ services:
      - "80:80"
      - "2443:2443"
      - "2022:22"
-     - "4567:4567"
+     # - "4567:4567"
+     - "5050:5050"
     volumes:
      - "${GITLAB_HOME:-./GITLAB_HOME}/data:/var/opt/gitlab"
      - "${GITLAB_HOME:-./GITLAB_HOME}/logs:/var/log/gitlab"
