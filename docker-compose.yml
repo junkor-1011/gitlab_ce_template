@@ -1,10 +1,10 @@
 version: "3.7"
 services:
   gitlab:
-    image: gitlab/gitlab-ce:latest
+    image: gitlab/gitlab-ce:${gitlab_ce_tag:-13.3.5-ce.0}
     container_name: gitlab
     restart: always
-    # hostname: 'gitlab.example.com'
+    hostname: 'gitlab'
     domainname: gitlab.example.com
     ports:
      - "80:80"
@@ -19,15 +19,15 @@ services:
     # environment:
     #   GITLAB_OMNIBUS_CONFIG: |
     #     external_url 'https://gitlab.example.com'
-  gitlab-runner:
-    # image: gitlab/gitlab-runner:latest
-    image: gitlab/gitlab-runner:alpine
-    restart: always
-    volumes:
-     - "./gitlab-runner/config:/etc/gitlab-runner"
-     - "/var/run/docker.sock:/var/run/docker.sock"
-    # networks:
-    #  mynet:
-    #   ipv4_address: 172.20.0.3
-    depends_on:
-      - gitlab
+  # gitlab-runner:
+  #   # image: gitlab/gitlab-runner:latest
+  #   image: gitlab/gitlab-runner:alpine
+  #   restart: always
+  #   volumes:
+  #    - "./gitlab-runner/config:/etc/gitlab-runner"
+  #    - "/var/run/docker.sock:/var/run/docker.sock"
+  #   # networks:
+  #   #  mynet:
+  #   #   ipv4_address: 172.20.0.3
+  #   depends_on:
+  #     - gitlab

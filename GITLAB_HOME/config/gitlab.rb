@@ -1216,8 +1216,8 @@ gitlab_rails['object_store']['objects']['terraform_state']['bucket'] = nil
 nginx['enable'] = true
 # nginx['client_max_body_size'] = '250m'
 # nginx['redirect_http_to_https'] = false
-nginx['redirect_http_to_https'] = false
-# nginx['redirect_http_to_https_port'] = 80
+nginx['redirect_http_to_https'] = true
+nginx['redirect_http_to_https_port'] = 80
 
 ##! Most root CA's are included by default
 # nginx['ssl_client_certificate'] = "/etc/gitlab/ssl/ca.crt"
