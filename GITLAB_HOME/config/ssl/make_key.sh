@@ -9,3 +9,6 @@ openssl req -batch -new -x509 -newkey rsa:4096 -nodes -sha256 \
   -subj /CN=example.com/O=example -days 3650 \
   -keyout ./gitlab.example.com.key \
   -out ./gitlab.example.com.crt
+
+# chmod
+chmod 400 ./gitlab.example.com.key

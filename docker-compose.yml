@@ -15,10 +15,10 @@ services:
      - "${GITLAB_HOME:-./GITLAB_HOME}/data:/var/opt/gitlab"
      - "${GITLAB_HOME:-./GITLAB_HOME}/logs:/var/log/gitlab"
      - "${GITLAB_HOME:-./GITLAB_HOME}/config:/etc/gitlab"
+    environment:
+      GITLAB_OMNIBUS_CONFIG: |
+        external_url 'https://gitlab.example.com'
     # network_mode: bridge
-    # environment:
-    #   GITLAB_OMNIBUS_CONFIG: |
-    #     external_url 'https://gitlab.example.com'
   # gitlab-runner:
   #   # image: gitlab/gitlab-runner:latest
   #   image: gitlab/gitlab-runner:alpine
