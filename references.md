@@ -13,3 +13,7 @@ Useful References
 - https://qiita.com/emudome/items/cb5f3f72f4cb35ff2e80
 - https://qiita.com/sunack/items/cc5d5ba24a15612399a8
 - https://qiita.com/masQuerade/items/192377fbdab08b67284f
+
+## enable HTTPS
+- https://docs.gitlab.com/omnibus/settings/nginx.html#enable-https
+- https://tacchan33.hatenablog.com/entry/2019/09/12/223359

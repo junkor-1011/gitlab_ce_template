@@ -2,17 +2,23 @@ version: "3.7"
 services:
   gitlab:
     image: gitlab/gitlab-ce:latest
+    container_name: gitlab
     restart: always
-    hostname: 'gitlab.example.com'
+    # hostname: 'gitlab.example.com'
+    domainname: gitlab.example.com
     ports:
      - "80:80"
-     - "5443:443"
+     - "2443:2443"
      - "2022:22"
      - "4567:4567"
     volumes:
      - "${GITLAB_HOME:-./GITLAB_HOME}/data:/var/opt/gitlab"
      - "${GITLAB_HOME:-./GITLAB_HOME}/logs:/var/log/gitlab"
      - "${GITLAB_HOME:-./GITLAB_HOME}/config:/etc/gitlab"
+    # network_mode: bridge
+    # environment:
+    #   GITLAB_OMNIBUS_CONFIG: |
+    #     external_url 'https://gitlab.example.com'
   gitlab-runner:
     # image: gitlab/gitlab-runner:latest
     image: gitlab/gitlab-runner:alpine

@@ -1,5 +1,6 @@
 *_key
 *.key
+*.key-staging
 *_key.pub
 *.key.pub
 *_crt
