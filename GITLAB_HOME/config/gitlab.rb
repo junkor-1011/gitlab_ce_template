@@ -677,7 +677,7 @@ gitlab_rails['object_store']['objects']['terraform_state']['bucket'] = nil
 ################################################################################
 
 # registry_external_url 'https://registry.example.com'
-registry_external_url 'https://registry.example.com:5050'
+registry_external_url 'https://gitlab.example.com:5050'
 
 ### Settings used by GitLab application
 # gitlab_rails['registry_enabled'] = true

@@ -18,6 +18,12 @@ Useful References
 - https://docs.gitlab.com/omnibus/settings/nginx.html#enable-https
 - https://tacchan33.hatenablog.com/entry/2019/09/12/223359
 
+### openssl
+- https://stackoverflow.com/questions/10175812/how-to-create-a-self-signed-certificate-with-openssl
+- https://kazuhira-r.hatenablog.com/entry/20180803/1533302929
+- https://qiita.com/mechamogera/items/72c47974180b5d2ecb03
+- https://qiita.com/mizuki_takahashi/items/e8cb52fbf0b215d06e77
+
 ## Registry
 - https://docs.gitlab.com/ee/user/packages/container_registry/
 - https://qiita.com/thaim/items/4e7e74e3a1be95fef821
