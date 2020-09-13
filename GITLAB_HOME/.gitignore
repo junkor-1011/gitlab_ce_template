@@ -1,0 +1,12 @@
+*_key
+*.key
+*.key-staging
+*_key.pub
+*.key.pub
+*_crt
+*.crt
+*_pem
+*.pem
+data/*
+logs/*
+config/gitlab-secrets.json
