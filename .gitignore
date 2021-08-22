@@ -47,3 +47,6 @@ Thumbs.db
 *.flv
 *.mov
 *.wmv
+
+# CUSTOM
+GITLAB_HOME/config/initial_root_password
